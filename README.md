@@ -2,4 +2,4 @@
 ### Just practice:
 + Promise,
 + Fetch,
-+ API: https://sampleapis.com;
++ API: [sampleapis](https://sampleapis.com), [jsonplaceholder](https://jsonplaceholder.typicode.com)
