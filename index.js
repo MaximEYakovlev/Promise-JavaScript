@@ -1,22 +1,5 @@
 import fetch from "node-fetch";
-
-const family = [
-  {
-    id: 1,
-    member: "mother",
-    coffee: "Latte",
-  },
-  {
-    id: 2,
-    member: "father",
-    coffee: "Espresso",
-  },
-  {
-    id: 3,
-    member: "son",
-    coffee: "Cappuccino",
-  },
-];
+import { family } from './data.js';
 
 const getCoffee = (member) => {
   const coffeePromise = fetch("https://api.sampleapis.com/coffee/hot");
