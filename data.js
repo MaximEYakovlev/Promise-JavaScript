@@ -1,17 +1,17 @@
 export const family = [
     {
         id: 1,
-        member: 'mother',
+        member: 'foo',
         coffee: 'Latte',
     },
     {
         id: 2,
-        member: 'father',
+        member: 'bar',
         coffee: 'Espresso',
     },
     {
         id: 3,
-        member: 'son',
+        member: 'baz',
         coffee: 'Cappuccino',
     },
 ];
