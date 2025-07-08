@@ -4,3 +4,7 @@ const executor = (resolve, reject) => {
 };
 
 const promise = new Promise(executor);
+
+const foo = new Promise((resolve, reject) => {
+    reject(new Error('Oops'));
+});
