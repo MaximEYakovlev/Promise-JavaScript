@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Hello world"
+echo "Start"
+docker-compose -f docker-compose.yml up -d
