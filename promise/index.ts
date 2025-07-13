@@ -10,7 +10,7 @@ const executor = (resolve, reject) => {
 /**
  * @object Promise
  */
-const promise = new Promise(executor);
+const promise: Promise<string> = new Promise(executor);
 
 const foo = new Promise((resolve, reject) => {
     reject(new Error('Oops'));
