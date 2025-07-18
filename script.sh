@@ -1,5 +1,4 @@
 #!/bin/bash
-docker-compose -f docker-compose.yml up -d
 # Bash Menu Script
 PS3='Please enter your choice: '
 options=("Option 1" "Option 2" "Option 3" "Quit")
@@ -8,6 +7,7 @@ do
     case $opt in
         "Option 1")
             echo "you chose choice 1"
+            docker-compose -f docker-compose.yml up -d
             ;;
         "Option 2")
             echo "you chose choice 2"
