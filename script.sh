@@ -1,19 +1,20 @@
 #!/bin/bash
 # Bash Menu Script
+source action.sh
+
 PS3='Please enter your choice: '
 options=("start postgres_db container" "start front" "start back" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
         "start postgres_db container")
-            docker-compose -f docker-compose.yml up -d
-            echo "you started postgres_db container"
+            start_db
             ;;
         "start front")
-            echo "you chose choice 2"
+            start_front
             ;;
         "start back")
-            echo "you chose choice $REPLY which is $opt"
+            start_back
             ;;
         "Quit")
             break
